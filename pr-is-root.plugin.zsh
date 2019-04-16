@@ -16,4 +16,4 @@ _pr_is_root() {
   fi
 }
 
-precmd_functions+=(_pr_is_root)
+_pr_is_root
