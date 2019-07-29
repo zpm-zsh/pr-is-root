@@ -9,7 +9,7 @@ _pr_is_root() {
   if [[ "$EUID" == 0 ]]; then
     
     if [[ $CLICOLOR = 1 ]]; then
-      pr_is_root="$PR_IS_ROOT_PREFIX%{$fg_bold[red]%}root%{$reset_color%}$PR_IS_ROOT_SUFFIX"
+      pr_is_root="$PR_IS_ROOT_PREFIX%{${c[red]}${c_bold}${c_dim}%}root%{$c_reset%}$PR_IS_ROOT_SUFFIX"
     else
       pr_is_root="$PR_IS_ROOT_PREFIX""root$PR_IS_ROOT_SUFFIX"
     fi
