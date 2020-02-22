@@ -4,6 +4,7 @@ PR_IS_ROOT_SUFFIX=${PR_IS_ROOT_SUFFIX:-''}
 
 _pr_is_root() {
   local RETVAL=$?
+  local pr_is_root
   pr_is_root=""
   
   if [[ "$EUID" == 0 ]]; then
